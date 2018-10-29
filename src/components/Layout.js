@@ -1,19 +1,47 @@
 
 
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
-import logo from '../assets/icons/logo.svg';
+import AuthContext from '../contexts/AuthContext';
+import Login from './Login';
 
-const Layout = ({ children }) => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <NavLink className='App-link' to='/'>Home</NavLink> &nbsp;
-      <NavLink className='App-link' to='/about'>About</NavLink> &nbsp;
-      <NavLink className='App-link' to='/contact'>Contact</NavLink> &nbsp;
-      {children}
-    </header>
-  </div>
-)
+class Layout extends Component {
+  state = { isAuth: false }
 
-export default React.memo(Layout);
+  toggleAuth = () => {
+    console.log('ToggleAuth')
+    this.setState((prevState) => ({
+      isAuth: !prevState.isAuth
+    }))
+  }
+
+  render() {
+    const { children } = this.props
+    const { isAuth } = this.state
+    return (
+      <AuthContext.Provider
+        value={{ isAuth, toggleAuth: this.toggleAuth }}
+      >
+        <div className="view">
+          <nav className="App-navbar">
+            <div className='float-left'>
+              <NavLink className='App-link' to='/'>Home</NavLink> &nbsp;
+              <NavLink className='App-link' to='/about'>About</NavLink> &nbsp;
+              <NavLink className='App-link' to='/contact'>Contact</NavLink> &nbsp;
+            </div>
+            <div className='float-right'>
+              <Login />
+            </div>
+          </nav>
+          <div className="app-container">
+            {children}
+          </div>
+        </div>
+      </AuthContext.Provider>
+    )
+  }
+}
+
+
+
+export default Layout;
