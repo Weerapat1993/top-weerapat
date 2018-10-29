@@ -1,7 +1,13 @@
 import React from 'react';
+import { Container, P } from '../components/Animation'
 
 const Home = () => (
-  <p>Home</p>
+  <Container>
+    <P>Home</P>
+    <P>Home</P>
+    <P>Home</P>
+    <P>Home</P>
+  </Container>
 );
 
 export default React.memo(Home);
