@@ -9,7 +9,6 @@ class Layout extends Component {
   state = { isAuth: false }
 
   toggleAuth = () => {
-    console.log('ToggleAuth')
     this.setState((prevState) => ({
       isAuth: !prevState.isAuth
     }))
