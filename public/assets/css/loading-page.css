@@ -18,12 +18,13 @@
   flex: 1;
   align-items: center;
   justify-content: center;
+  background: #282c34;
 }
 .bouncing-loader > div {
   width: 1rem;
   height: 1rem;
   margin: 3rem 0.2rem;
-  background: #8385aa;
+  background: #676c83;
   border-radius: 50%;
   animation: bouncing-loader 0.6s infinite alternate;
 }

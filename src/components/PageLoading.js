@@ -1,12 +1,12 @@
 
 
 import React from 'react';
-import logo from '../assets/icons/logo.svg';
 
 const PageLoading = () => (
-  <div className="page-loading">
-    <img src={logo} className="App-logo" alt="logo" />
-    <p>Loading ...</p>
+  <div className="bouncing-loader">
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
 )
 
