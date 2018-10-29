@@ -1,13 +1,9 @@
 import React from 'react';
-import { Container, P } from '../components/Animation'
 
 const Contact = () => (
-  <Container>
-    <P>Contact</P>
-    <P>Contact</P>
-    <P>Contact</P>
-    <P>Contact</P>
-  </Container>
+  <div>
+    Contact
+  </div>
 );
 
-export default React.memo(Contact);
+export default Contact

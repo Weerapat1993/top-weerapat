@@ -1,13 +1,9 @@
 import React from 'react';
-import { Container, P } from '../components/Animation'
 
 const About = () => (
-  <Container>
-    <P>About</P>
-    <P>About</P>
-    <P>About</P>
-    <P>About</P>
-  </Container>
+  <div>
+    About
+  </div>
 );
 
-export default React.memo(About);
+export default About

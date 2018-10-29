@@ -25,14 +25,15 @@ const renderChunk = (WrapperComponent) => {
 const Routes = () => (
   <Router>
     <Route
+      key='root'
       render={({ location }) => (
         <Layout>
           <PoseGroup>
             <RouteContainer key={location.key}>
               <Switch location={location}>
-                <Route path='/' render={renderChunk(Home)} exact />
-                <Route path='/about' render={renderChunk(About)} />
-                <Route path='/contact' render={renderChunk(Contact)} />
+                <Route key='home' path='/' render={renderChunk(Home)} exact />
+                <Route key='about' path='/about' render={renderChunk(About)} />
+                <Route key='contact' path='/contact' render={renderChunk(Contact)} />
               </Switch>
             </RouteContainer>
           </PoseGroup>
