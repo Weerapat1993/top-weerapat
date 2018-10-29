@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center;
   background: #282c34;
+  overflow: hidden;
 }
 .bouncing-loader > div {
   width: 1rem;

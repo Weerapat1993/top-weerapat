@@ -23,14 +23,11 @@ class Layout extends Component {
       >
         <div className="view">
           <nav className="App-navbar">
-            <div className='float-left'>
-              <NavLink className='App-link' to='/'>Home</NavLink> &nbsp;
-              <NavLink className='App-link' to='/about'>About</NavLink> &nbsp;
-              <NavLink className='App-link' to='/contact'>Contact</NavLink> &nbsp;
-            </div>
-            <div className='float-right'>
-              <Login />
-            </div>
+            <NavLink className='App-link' to='/'>Home</NavLink>
+            <NavLink className='App-link' to='/about'>About</NavLink>
+            <NavLink className='App-link' to='/contact'>Contact</NavLink>
+            <div className="flex" />
+            <Login />
           </nav>
           <div className="app-container">
             {children}

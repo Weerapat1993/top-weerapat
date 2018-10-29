@@ -1,3 +1,5 @@
+$backgroud-color: #282c34;
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: $backgroud-color;
 }
 
 code {
@@ -15,7 +18,7 @@ code {
 
 
 .App {
-  background-color: #282c34;
+  background-color: $backgroud-color;
   font-size: calc(10px + 2vmin);
   color: white;
   display: flex;
@@ -24,13 +27,31 @@ code {
 }
 
 .App-navbar {
-  justify-content: flex-start;
-  padding: 20px;
-  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  background-color: $backgroud-color;
+  border-bottom: 1px solid #333333;
 }
 
 .App-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   color: #61dafb;
+  padding: 20px;
+  border-right: 1px solid #333333;
+
+  &:hover {
+    background: #444444;
+    color: white;
+  }
+
+  &:active {
+    background: #444444;
+    color: white;
+  }
 }
 
 .text-center {
@@ -69,10 +90,9 @@ code {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: #282c34;
-  min-height: 85vh;
   padding: 20px;
   color: white;
+  position: relative;
 }
 
 .page-loading {
@@ -83,7 +103,7 @@ code {
   flex: 1;
   color: white;
   font-size: calc(10px + 2vmin);
-  background: #282c34;
+  background: $backgroud-color;
   min-height: 100vh;
 }
 
@@ -99,4 +119,20 @@ code {
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
