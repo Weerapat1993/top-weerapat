@@ -29,10 +29,10 @@ class Layout extends Component {
               <NavLink className='App-link' to='/contact'>Contact</NavLink>
             </div>
             <div className="hide-desktop">
-              <div class="App-link" onClick={() => alert('menu')}>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+              <div className="App-link" onClick={() => alert('menu')}>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
               </div>
             </div>
             <div className="flex" />
