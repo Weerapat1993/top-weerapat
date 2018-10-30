@@ -21,6 +21,10 @@ const Home = () => (
       <button className="btn btn--large btn--danger">Danger</button>
       <button className="btn btn--large btn--disabled" disabled>Disable</button>
     </div>
+    <div style={{ display: 'flex' }}>
+      <button className="btn btn--large btn--success hide-mobile">Hide Mobile</button>
+      <button className="btn btn--large btn--warning hide-desktop">Hide Desktop</button>
+    </div>
   </div>
 );
 

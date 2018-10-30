@@ -1,0 +1,28 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './components/normalize.scss';
+@import './components/text.scss';
+@import './components/flex.scss';
+@import './components/navbar.scss';
+@import './components/button.scss';
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.page-loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  background: $backgroud-color;
+  min-height: 100vh;
+}

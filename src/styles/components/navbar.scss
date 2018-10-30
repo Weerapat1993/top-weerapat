@@ -1,0 +1,27 @@
+.App-navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: $backgroud-color;
+  border-bottom: 1px solid #333333;
+}
+
+.App-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #61dafb;
+  padding: 20px;
+  border-right: 1px solid #333333;
+
+  &:hover {
+    background: #444444;
+    color: white;
+  }
+
+  &:active {
+    background: #444444;
+    color: white;
+  }
+}
