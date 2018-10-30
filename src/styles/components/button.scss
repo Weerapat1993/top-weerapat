@@ -1,0 +1,101 @@
+$border-hover: #333;
+
+
+.btn {
+  border-radius: 5px;
+  border: 0px;
+  background: $btn-default;
+  padding: 5px 10px !important;
+  margin: 5px;
+  font-size: 14px;
+  border: 1px solid transparent;
+
+  &--default {
+    background: $btn-default;
+    color: white;
+    &:hover {
+      background: $btn-transparent;
+      border: 1px solid $btn-default;
+      color: $btn-default;
+    }
+    &:active {
+      border: 1px solid transparent;
+    }
+  }
+
+  &--primary {
+    background: $btn-primary;
+    color: white;
+    &:hover {
+      background: $btn-transparent;
+      border: 1px solid $btn-primary;
+      color: $btn-primary;
+    }
+    &:active {
+      border: 1px solid transparent;
+    }
+  }
+
+  &--info {
+    background: $btn-info;
+    color: white;
+    &:hover {
+      background: $btn-transparent;
+      border: 1px solid $btn-info;
+      color: $btn-info;
+    }
+    &:active {
+      border: 1px solid transparent;
+    }
+  }
+
+  &--success {
+    background: $btn-success;
+    color: white;
+    &:hover {
+      background: $btn-transparent;
+      border: 1px solid $btn-success;
+      color: $btn-success;
+    }
+    &:active {
+      border: 1px solid transparent;
+    }
+  }
+
+  &--warning {
+    background: $btn-warning;
+    color: white;
+    &:hover {
+      background: $btn-transparent;
+      border: 1px solid $btn-warning;
+      color: $btn-warning;
+    }
+    &:active {
+      border: 1px solid transparent;
+    }
+  }
+
+  &--danger {
+    background: $btn-danger;
+    color: white;
+    &:hover {
+      background: $btn-transparent;
+      border: 1px solid $btn-danger;
+      color: $btn-danger;
+    }
+    &:active {
+      border: 1px solid transparent;
+    }
+  }
+
+  &--disabled {
+    background: $btn-disabled;
+    color: white;
+    opacity: 0.8;
+  }
+
+  &--large {
+    padding: 8px 16px !important;
+    font-size: 15px;
+  }
+}
