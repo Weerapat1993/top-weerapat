@@ -7,9 +7,9 @@ class Login extends Component {
   render() {
     const { isAuth } = this.context
     return (
-      <div className="btn" onClick={this.context.toggleAuth}>
+      <button className="btn btn--default" onClick={this.context.toggleAuth}>
         {isAuth ? 'Login' : 'Logout'}
-      </div>
+      </button>
     )
   }
 }

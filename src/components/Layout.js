@@ -23,9 +23,18 @@ class Layout extends Component {
       >
         <div className="view">
           <nav className="App-navbar">
-            <NavLink className='App-link' to='/'>Home</NavLink>
-            <NavLink className='App-link' to='/about'>About</NavLink>
-            <NavLink className='App-link' to='/contact'>Contact</NavLink>
+            <div className='hide-mobile'>
+              <NavLink className='App-link' to='/'>Home</NavLink>
+              <NavLink className='App-link' to='/about'>About</NavLink>
+              <NavLink className='App-link' to='/contact'>Contact</NavLink>
+            </div>
+            <div className="hide-desktop">
+              <div class="App-link" onClick={() => alert('menu')}>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
             <div className="flex" />
             <Login />
           </nav>

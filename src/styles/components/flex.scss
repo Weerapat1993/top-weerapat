@@ -17,6 +17,7 @@
 }
 
 .hide-mobile {
+  display: flex;
   @include mobile {
     display: none;
   }
@@ -26,6 +27,7 @@
 }
 
 .hide-desktop {
+  display: flex;
   @include desktop {
     display: none;
   }
